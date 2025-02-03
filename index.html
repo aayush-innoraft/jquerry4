@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h1>header</h1></div>
+      <div class="content">
+        <div class="left"><h1>left</h1></div>
+        <div class="right">
+          <div class="maincontent"><h1>main content</h1></div>
+          <div class="lowercont"><h1>extra space</h1></div>
+        </div>
+      </div>
+      <div class="footer"><h1>footer</h1></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".header").click(function () {
+          $(".header").css("backgroundColor", "red");
+        });
+        $(".left").click(function () {
+          $(".left").text("sidebar");
+        });
+        $(".lowercont").click(function () {
+          $(".maincontent").css("display", "none");
+        });
+      });
+    </script>
+  </body>
+</html>
